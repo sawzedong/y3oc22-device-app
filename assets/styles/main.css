@@ -1,0 +1,43 @@
+body {
+    background-color: #121013;
+    color: #c4a367 !important;
+    font-family: 'Yuji Syuku', serif !important; 
+}
+h1 {
+    font-size: 3em;
+}
+#headingwrapper {
+    text-align: center;
+    display: inline;
+}
+#headingwrapper > h1 {
+    display: inline;
+    border-bottom: 1px solid #c4a367dd;
+    padding: 0 1em;
+}
+.btnwrapper {
+    padding: 0;
+}
+.debug {
+    border: 1px solid white;
+}
+.scenebtn {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: #c4a36700;
+    border-radius: 15px;
+    border: 2px solid #c4a367;
+    color: #c4a367 !important;
+    font-size: 1.5em;
+    transition: 0.1s;
+}
+.scenebtn:hover {
+    background-color: #c4a3670c;
+}
+.scenebtn:active {
+    background-color: #c4a36718;
+}
+.h-35  {
+    height: 35% !important;
+}
