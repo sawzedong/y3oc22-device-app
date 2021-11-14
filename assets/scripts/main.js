@@ -1,4 +1,7 @@
-$(window).on( "load", function() {
+$(window).on( "click", function() {
+    $('#body').removeClass('vh-200');
+    $('#initialMessage').addClass('d-none');
+    $('#titlewrapper').removeClass('d-none');
     $('#titlewrapper').addClass('magictime puffIn');
     setTimeout(function(){
         $('#titlewrapper').addClass('magictime puffOut');

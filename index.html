@@ -12,13 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <title>The Writer</title>
 </head>
-<body>
-    <div class="position-absolute top-50 start-50 translate-middle" id="titlewrapper">
+<body class="vh-200" id="body">
+    <div class="initial position-fixed top-50 start-50 translate-middle paraText w-100 text-center" id="initialMessage">
+        Scroll down to enter full screen mode. Click anywhere to hide this message.
+    </div>
+    <div class="position-absolute top-50 start-50 translate-middle d-none" id="titlewrapper">
         <h1>
             The Writer
         </h1>
-    </div> 
-    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column" id="scenewrapper">
+    </div>
+    <div class="container-fluid position-absolute d-none d-flex flex-column h-100" id="scenewrapper">
         <div id="headingwrapper">
             <h1>The Writer</h1>
         </div>

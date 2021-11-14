@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <title>The Writer - V1S2</title>
 </head>
-<body>
-    <div class="position-absolute top-50 start-50 translate-middle" id="titlewrapper">
-        <h1>
-            The Writer
-        </h1>
-    </div> 
-    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column" id="scenewrapper">
+<body class="vh-200" id="body">
+    <div class="initial position-fixed top-50 start-50 translate-middle paraText w-100 text-center" id="cut0">
+        Scroll down to enter full screen mode. Click anywhere to hide this message.
+    </div>
+    <div class="paraText click-instruction d-none" id="cut1">
+        Stuff
+    </div>
+
+    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper" id="cut2">
         <div id="headingwrapper">
             <h1>The Writer</h1>
         </div>
@@ -31,7 +33,32 @@
             </div>
         </div>
     </div>
+
+    <div class="d-none" id="cut1">
+
+    </div>
+
+    <div class="position-absolute top-50 start-50 translate-middle d-none titlewrapper" id="cut">
+        <h1>
+            The Writer
+        </h1>
+    </div> 
+
+    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper" id="cut">
+        <div id="headingwrapper">
+            <h1>The Writer</h1>
+        </div>
+        <div class="flex-grow-1 row justify-content-around align-items-center">
+            <div class="col-4 h-35 btnwrapper">
+                <button class="scenebtn" id="v1s2link">V1S2</button>
+            </div>
+            <div class="col-4 h-35 btnwrapper">
+                <button class="scenebtn" id="v8s1link">V8S1</button>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/packages/jquery-3.6.0.min.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/v1s2.js"></script>
 </body>
 </html>
