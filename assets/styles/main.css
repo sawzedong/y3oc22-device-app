@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 body.gray-background {
-    background-color: #121013 !important;
+    background-color: #121013;
 }
 .vh-200 {
     height: 200vh;
@@ -98,6 +98,11 @@ h2  {
 #realProgBar {
     background-color: #c4a367;
     transition: 0.1s;
+}
+
+#body.turnOff {
+    color: #000 !important;
+    transition: 1s;
 }
 @keyframes opacitydrop {
     0% {

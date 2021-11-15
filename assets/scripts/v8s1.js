@@ -1,6 +1,6 @@
 let currStage = 0;
 let timeouts = []
-const textToType = "Planet Earth has met its doom.\n\nI stood there, and watched as huge orange flames engulfed every corner of the planet. This was the end, I thought. Indeed, it was. Not long after, I fainted. I can’t remember what happened after that, but when I woke up, I was in a completely unfamiliar environment.";
+const textToType = "Finally, in the end, Planet Earth is restored, in the best way possible. It is merged with the Planet of DHS-22Y3, and all the lifeforms of both planets coexist peacefully and perfectly together.";
 let error = false
 
 let allowedFullAnimation = false
