@@ -104,6 +104,9 @@ h2  {
     color: #000 !important;
     transition: 1s;
 }
+#cut6 {
+    font-size: 2.5em;
+}
 @keyframes opacitydrop {
     0% {
         opacity: 100%;

@@ -94,12 +94,23 @@ function changeProgressBar(id) {
 
         if (currWidth >= 100 && !firstRun) {
             completedFullRun = true;
-            $('#cut5').addClass('disappear');
-            $('#body').addClass('turnOff');
-            $('#body').removeClass('gray-background')
+            $('#cut5').addClass('magictime vanishOut');
+            setTimeout(function() {
+                $('#cut6').addClass('magictime vanishIn');
+            }, 550)
+            setTimeout(function() {
+                $('#cut6').removeClass('d-none');
+                $('#cut5').addClass('d-none');
+            }, 1050)
+            setTimeout(function() {
+                $('#cut6').addClass('disappear');
+                $('#body').addClass('turnOff');
+                $('#body').removeClass('gray-background')
+            }, 2550)
             setTimeout(function() {
                 $('.cut').addClass('d-none')
-            }, 1050)
+            }, 3600)
+
         }
     }, 100);
 }
