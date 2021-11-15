@@ -1,7 +1,11 @@
 body {
-    background-color: #121013;
+    background-color: #000;
     color: #c4a367 !important;
     font-family: 'Yuji Syuku', serif !important; 
+    padding: 0;
+}
+body.gray-background {
+    background-color: #121013 !important;
 }
 .vh-200 {
     height: 200vh;
@@ -28,6 +32,9 @@ h1 {
 .scenebtn {
     height: 100%;
     width: 100%;
+}
+button {
+    padding: 0 20px;
     position: relative;
     background-color: #c4a36700;
     border-radius: 15px;
@@ -36,10 +43,10 @@ h1 {
     font-size: 1.5em;
     transition: 0.1s;
 }
-.scenebtn:hover {
+button:hover {
     background-color: #c4a3670c;
 }
-.scenebtn:active {
+button:active {
     background-color: #c4a36718;
 }
 .h-35  {
@@ -52,4 +59,52 @@ h1 {
 .click-instruction {
     text-align: center;
     padding: 5px 0;
+}
+.instruction {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+textarea {
+    background-color: #12101300;
+    color: #c4a367 !important;
+    font-family: 'Yuji Syuku', serif !important; 
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10px;
+    resize: none;
+}
+textarea:focus {
+    outline:0;
+}
+h2  {
+    font-size: 2em;
+}
+
+.disappear {
+    animation: 1s linear opacitydrop;
+    animation-fill-mode: forwards; 
+}
+.smallText {
+    font-size: 1em !important;
+}
+.progress {
+    margin: 2em 5em;
+    background-color: #12101300;
+    border: 1px solid #c4a367;
+    padding: 2px;
+    transition: 0.1s;
+}
+#realProgBar {
+    background-color: #c4a367;
+    transition: 0.1s;
+}
+@keyframes opacitydrop {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+
+        opacity: 0%;
+    }
 }

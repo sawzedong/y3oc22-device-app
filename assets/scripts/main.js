@@ -1,4 +1,5 @@
 $(window).on( "click", function() {
+    
     $('#body').removeClass('vh-200');
     $('#initialMessage').addClass('d-none');
     $('#titlewrapper').removeClass('d-none');

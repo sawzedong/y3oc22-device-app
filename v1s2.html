@@ -12,50 +12,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet">
     <title>The Writer - V1S2</title>
 </head>
-<body class="vh-200" id="body">
-    <div class="initial position-fixed top-50 start-50 translate-middle paraText w-100 text-center" id="cut0">
+<body class="vh-200 gray-background" id="body">
+    <div class="initial position-fixed top-50 start-50 translate-middle paraText w-100 text-center cut" id="cut0">
         Scroll down to enter full screen mode. Click anywhere to hide this message.
     </div>
-    <div class="paraText click-instruction d-none" id="cut1">
-        Stuff
-    </div>
-
-    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper" id="cut2">
+    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper cut" id="cut1">
         <div id="headingwrapper">
-            <h1>The Writer</h1>
+            <h1>Instructions for V1S2</h1>
         </div>
-        <div class="flex-grow-1 row justify-content-around align-items-center">
-            <div class="col-4 h-35 btnwrapper">
-                <button class="scenebtn" id="v1s2link">V1S2</button>
-            </div>
-            <div class="col-4 h-35 btnwrapper">
-                <button class="scenebtn" id="v8s1link">V8S1</button>
-            </div>
+        <div class="flex-grow-1 instruction">
+            <ol>
+                <li>click anywhere to continue</li>
+                <li>when recording starts, stay on the black screen (next page)</li>
+                <li>click to show the 'starting screen'</li>
+                <li>click anywhere to bring up the keyboard, type and the text should appear</li>
+                <li>when done, just press submit</li>
+                <li>the progress bar will play twice. <strong>this is <u class="underline">intentional</u>.</strong></li>
+                <li>the exact text is as follows:<br>Planet Earth has met its doom.<br><br>I stood there, and watched as huge orange flames engulfed every corner of the planet. This was the end, I thought. Indeed, it was. Not long after, I fainted. I can’t remember what happened after that, but when I woke up, I was in a completely unfamiliar environment.</li>
+            </ol>
         </div>
     </div>
 
-    <div class="d-none" id="cut1">
-
+    <div class="cut" id="cut2">
+        <!-- This is intentionally blank. -->
     </div>
 
-    <div class="position-absolute top-50 start-50 translate-middle d-none titlewrapper" id="cut">
+    <div class="position-absolute top-50 start-50 translate-middle d-none cut" id="cut3">
         <h1>
             The Writer
         </h1>
-    </div> 
+    </div>
 
-    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper" id="cut">
-        <div id="headingwrapper">
-            <h1>The Writer</h1>
+    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper cut" id="cut4">
+        <div class="flex-grow-1">
+            <textarea placeholder="Enter your story here..." id="textarea"></textarea>
         </div>
-        <div class="flex-grow-1 row justify-content-around align-items-center">
-            <div class="col-4 h-35 btnwrapper">
-                <button class="scenebtn" id="v1s2link">V1S2</button>
-            </div>
-            <div class="col-4 h-35 btnwrapper">
-                <button class="scenebtn" id="v8s1link">V8S1</button>
+        <div class="text-center">
+            <button id="enter">
+                Enter
+            </button>
+        </div>
+        <div class="text-end">
+            The Writer
+        </div>
+    </div>
+
+    <div class="container-fluid h-100 position-absolute d-none d-flex flex-column scenewrapper cut" id="cut5">
+        <div class="flex-grow-1">
+            <div class="position-relative top-50 start-50 translate-middle text-center">
+                <para class="paraText">Be careful what you wish for, you may receive it.</para><br>
+                <span class="smallText">- W. W. Jacobs</span><br>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" id="realProgBar"></div>
+                  </div>
             </div>
         </div>
+        <div class="text-end">
+            The Writer
+        </div>
+    </div>
+    <div class="d-none position-absolute text-center start-50 top-50 translate-middle" id="errormessage">
+        <h2>Error <span id="ecode"></span></h2>
+        <p id="edesc" class="paraText"></p>
     </div>
 
     <script src="assets/packages/jquery-3.6.0.min.js"></script>
