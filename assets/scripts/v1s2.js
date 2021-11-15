@@ -5,8 +5,8 @@ let error = false
 
 let allowedFullAnimation = false
 
-let skipAnimationError = false // this should be true for prod, false for dev
-let skipFullTextError = false // this should be true for prod, false for dev
+let skipAnimationError = true // this should be true for prod, false for dev
+let skipFullTextError = true // this should be true for prod, false for dev
 
 prevIncrement = -1
 currWidth = 0
@@ -61,8 +61,8 @@ function changeProgressBar(id) {
         if (currWidth >= 100 && firstRun) {
             $(window).on("click", function() {
                 if(firstRun) {
+                    $(id).attr('aria-valuenow', 0).css('width', 0+'%');
                     setTimeout(function() {
-                        $(id).attr('aria-valuenow', 0).css('width', 0+'%');
                         currWidth = 0;
                         k = 0;
                         prevIncrement = -1;
